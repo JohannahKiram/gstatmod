@@ -115,6 +115,8 @@ as.vgm.variomodel = function(m) {
 		model = "Pow"
 	else if (m$cov.model == "spherical")
 		model = "Sph"
+	else if (m$cov.model == "gompertz")
+	  model = "Gom"
 	else if (m$cov.model == "pure.nugget")
 		return(vgm(m$nugget + m$cov.pars[1], "Nug", 0))
 	else

@@ -230,6 +230,17 @@ double fn_matern(double h, double *p) {
 	/* ans was for correlation; */
     return 1.0 - ans;
 }
+double fn_gompertz (double h, double *r) {
+  if (h == 0.0)
+    return 0.0;
+  return 1.0 - exp(exp(-h/(*r))); 
+}
+
+double da_fn_gompertz (double h, double *r) {
+  double hr;
+  hr = -h/(*r);
+  return (hr / (*r))  * exp(exp(hr)); 
+}
 
 /* 
  * Ste: M. Stein's representation of the Matern model

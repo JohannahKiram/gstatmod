@@ -49,6 +49,8 @@ const V_MODEL v_models[] = { /* the variogram model catalogue: */
 	{ 	HOLE,           "Hol", "Hol (hole)", fn_hole, da_fn_hole },
 	{	LOGARITHMIC,    "Log", "Log (logarithmic)", fn_logarithmic, da_fn_logarithmic },
 	{	POWER,          "Pow", "Pow (power)", fn_power, da_fn_power },
+	{ GOMPERTZ,       "Gom", "Gom (gompertz)", fn_gompertz, da_fn_gompertz }, 
+	
 		/* Wackernagel 2nd ed., p. 225 -- not working yet */
 	{	SPLINE,         "Spl", "Spl (spline)", fn_spline, NULL },
 	{	LEGENDRE,       "Leg", "Leg (Legendre)", fn_legendre, NULL },
