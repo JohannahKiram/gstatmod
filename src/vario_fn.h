@@ -18,6 +18,7 @@ double fn_power(double h, double *r);
 double fn_spline(double h, double *r);
 double fn_legendre(double h, double *r);
 double fn_intercept(double h, double *r);
+double fn_gompertz(double h, double *r);
 
 /* the following functions are not all defined */
 double da_is_zero(double h, double *r); /* NUG, INT */
@@ -33,6 +34,7 @@ double da_fn_wave(double h, double *r);
 double da_fn_hole(double h, double *r);
 double da_fn_logarithmic(double h, double *r);
 double da_fn_power(double h, double *r);
+double da_fn_gompertz(double h, double *r);
 
 /* unit derivative-to-range of basic variogram models */
 double da_fn_exponential(double h, double *r);
